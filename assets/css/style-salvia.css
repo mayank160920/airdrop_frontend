@@ -18799,10 +18799,11 @@ hr+.nk-block {
 .menu-btns {
     margin-bottom: 26px;
     margin-left: -10px;
-    margin-right: -10px;
+    margin-right: 6px;
     margin-top: -10px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .menu-btns>li {
