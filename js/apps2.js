@@ -90,7 +90,7 @@ function getreflink() {
   let link = window.location.href;
   addr = document.getElementById('refaddress').value
   if (!addr) {
-    alert('Please Enter You Address !');
+    alert('Please Enter Your Address !');
     return
   } 
   ref_link = link + '?r=' + addr
