@@ -2,7 +2,7 @@ let web3 ;
 let default_account;
 let my_contract;
 
-const contract_address = "0xFBb53fFb09877e88fC16dbcDD495CE15B399E8EC";
+const contract_address = "0x89131218467E8dB62BeC4e9cb2e1699e19580D6f";
 const contract_abi = [{"inputs": [{"internalType": "address","name": "referral_address","type": "address"}],"name": "claim_airdrop","outputs": [],"stateMutability": "payable","type": "function"}]
 
 const loadweb3 = async () => {
