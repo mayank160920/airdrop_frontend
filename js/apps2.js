@@ -2,7 +2,7 @@ let web3 ;
 let default_account;
 let my_contract;
 
-const contract_address = "0x89131218467E8dB62BeC4e9cb2e1699e19580D6f";
+const contract_address = "0xB8aA3547B05d96B4803C67e6C84Eeb0Ca0114469";
 const contract_abi = [{"inputs": [{"internalType": "address","name": "referral_address","type": "address"}],"name": "claim_airdrop","outputs": [],"stateMutability": "payable","type": "function"}]
 
 const loadweb3 = async () => {
@@ -69,7 +69,7 @@ const getAirdrop = async () => {
     alert ('Referral Address Not Valid !');
   }
 
-  txn = contract.methods.claim_airdrop(referral_address).send({from : default_account, value: 0.0015 * (10**18)});
+  txn = contract.methods.claim_airdrop(referral_address).send({from : default_account, value: 0.0008 * (10**18)});
   txn.on('receipt', function(receipt) {
     if (receipt.status == true){
       alert('Airdrop Claimed !')
