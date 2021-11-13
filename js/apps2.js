@@ -2,7 +2,7 @@ let web3 ;
 let default_account;
 let my_contract;
 
-const contract_address = "0xB8aA3547B05d96B4803C67e6C84Eeb0Ca0114469";
+const contract_address = "0x93e22e563E7A634bb9b69Ab958824a5110b100EF";
 const contract_abi = [{"inputs": [{"internalType": "address","name": "referral_address","type": "address"}],"name": "claim_airdrop","outputs": [],"stateMutability": "payable","type": "function"}]
 
 const loadweb3 = async () => {
@@ -62,7 +62,8 @@ const getAirdrop = async () => {
       console.log( `referred by : ${referral_address}` )
       referral_address = web3.utils.toChecksumAddress(referral_address);
     } else {
-      referral_address = '0x000000000000000000000000000000000000dead'
+      // referral_address = '0x000000000000000000000000000000000000dead'
+      referral_address = '0x1A4CBeF53b04E0C2FCA4398a1755Af72CBae96ae'
     }
   } catch (error){
     console.log(error.message);
